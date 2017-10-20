@@ -62,7 +62,7 @@ public class Cat {
     }
 
     public void goToSleep() {
-        if(!this.sleep)
+        if (!this.sleep)
             this.sleep = true;
     }
 

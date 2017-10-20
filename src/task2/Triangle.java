@@ -15,23 +15,24 @@ public class Triangle {
         this.perimetr = perimetr(side1, side2, side3);
 
     }
+
     private double perimetr(float a, float b, float c) {
-        return (a+b+c)/2;
+        return (a + b + c) / 2;
 
     }
-    public double square(){
-        if(this.checkSides()) {
+
+    public double square() {
+        if (this.checkSides()) {
             double square = sqrt(perimetr * (perimetr - side1) * (perimetr - side2) * (perimetr - side3));
             return square;
-        }
-        else
+        } else
             System.out.println(this.toString() + " does not exist");
-            return -1;
+        return -1;
 
     }
 
-    private boolean checkSides(){
-        if(this.side1 > 0 && this.side2 > 0 && this.side3 > 0 )
+    private boolean checkSides() {
+        if (this.side1 > 0 && this.side2 > 0 && this.side3 > 0)
             return true;
         return false;
     }
