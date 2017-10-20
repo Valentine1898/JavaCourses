@@ -1,4 +1,4 @@
-package java.homework.task1;
+package task1;
 
 import java.awt.*;
 
