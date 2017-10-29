@@ -44,17 +44,11 @@ public class Point {
             return false;
     }
 
-    public boolean isEqual(Point point1, Point point2) {
-        if (this == point1 || this == point2 || point1 == point2) {
-            System.out.println("These point is equal");
-            return true;
-        } else
-            return false;
-    }
+
 
     @Override
     public String toString() {
-        return "Point{" +
+        return "{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';
