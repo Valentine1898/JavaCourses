@@ -2,7 +2,7 @@ package Homework3;
 
 import java.util.*;
 
-public class Group {
+public class Group implements Voenkom {
     private int id;
     private Student student[] = new Student[10];
 
@@ -186,6 +186,20 @@ public class Group {
         }
     }
 
+    @Override
+    public Student[] getStudentAdult() {
+        Student adultStudent[] = new Student[10];
+        int j = 0;
+        for (int i = 0; i < student.length ; i++) {
+            if (student[i] != null && student[i].getAge() >= 18) {
+              student[j] = student[i];
+              j++;
+
+            }
+
+        }
+        return adultStudent ;
+    }
 
     @Override
     public String toString() {
