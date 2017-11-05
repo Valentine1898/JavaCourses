@@ -1,12 +1,14 @@
 package Homework3;
 
-public class Student extends Human {
+public class Student extends Human implements Comparable {
     private int course;
+    private double avgScore;
     private String university;
 
-    public Student(String name, int age, int weight, int height, boolean sex, int course) {
+    public Student(String name, int age, int weight, int height, boolean sex, int course, double avgScore) {
         super(name, age, weight, height, sex);
         this.course = course;
+        this.avgScore = avgScore;
         this.university = "KPI";
     }
 
@@ -29,10 +31,28 @@ public class Student extends Human {
         this.university = university;
     }
 
+    public double getAvgScore() {
+        return avgScore;
+    }
+
+    public void setAvgScore(double avgScore) {
+        this.avgScore = avgScore;
+    }
+
+
+
+    @Override
+    public int compareTo(Object o) {
+        Student anotherStudent = (Student)o;
+        return this.getName().compareTo(anotherStudent.getName());
+
+    }
+
     @Override
     public String toString() {
         return "{" +
                 "course=" + course +
-                "} " + super.toString();
+                "AvgScore = " + avgScore +
+                " } " + super.toString();
     }
 }

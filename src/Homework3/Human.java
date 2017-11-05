@@ -1,11 +1,11 @@
 package Homework3;
 
 public class Human {
-    private String name;
-    private int age;
-    private int weight;
-    private int height;
-    private boolean sex;
+    protected String name;
+    protected int age;
+    protected int weight;
+    protected int height;
+    protected boolean sex;
 
     public Human(String name, int age, int weight, int height, boolean sex) {
         this.name = name;
