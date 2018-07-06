@@ -1,1 +1,1 @@
-# Homework from the Java OOP course prog.kiev.ua
+# Homeworks from the Java OOP course prog.kiev.ua
